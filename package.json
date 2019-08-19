@@ -4,6 +4,8 @@
   "description": "react weather app",
   "main": "index.js",
   "scripts": {
+    "dev" : "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm start --prefix weather-app-client",
     "server": "nodemon weather-app-server"
   },
   "repository": {
