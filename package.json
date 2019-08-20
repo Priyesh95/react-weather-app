@@ -6,7 +6,10 @@
   "scripts": {
     "dev" : "concurrently \"npm run server\" \"npm run client\"",
     "client": "npm start --prefix weather-app-client",
-    "server": "nodemon weather-app-server"
+    "server": "nodemon weather-app-server",
+    "start" : "node weather-app-server",
+    "heroku-postbuild": "cd weather-app-client && npm install && npm run build"
+
   },
   "repository": {
     "type": "git",
