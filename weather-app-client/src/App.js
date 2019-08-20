@@ -14,7 +14,7 @@ import {
   Col
 } from 'reactstrap';
 
-import Weather from './Weather';
+import Weather from '../src/weather';
 
 class App extends Component {
   constructor(props) {
